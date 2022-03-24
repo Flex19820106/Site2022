@@ -1,0 +1,486 @@
+/* скидання стилів браузера */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1.2;
+}
+
+ol {
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+
+ul {
+    padding-left: 1.4em;
+    list-style: square;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* кінець кода скидання стилів браузера */
+/*підключення шрифтів*/
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Italic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-BoldItalic.ttf') format('ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Black.ttf') format('ttf');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-BlackItalic.ttf') format('ttf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Thin.ttf') format('ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-ThinItalic.ttf') format('ttf');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/*кінець підключення шрифтів*/
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+h2 {
+    font-size: 4.5rem;
+
+}
+
+h3 {
+    font-size: 4.2rem;
+
+}
+
+h4 {
+    font-size: 4rem;
+
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 100;
+    margin-top: 0;
+    letter-spacing: .1rem;
+    margin-bottom: 3rem;
+}
+
+h4 span,
+h2 span,
+h3 span {
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    margin-bottom: 0;
+}
+
+a,
+input,
+textarea {
+    font-size: 1.66rem;
+}
+
+a {
+    display: block;
+    margin-top: 4.5rem;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 210px;
+}
+
+button {
+    display: block;
+    background: transparent url('../img/menu.svg');
+    width: 33px;
+    height: 33px;
+    border: none;
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+[placeholder] {
+    color: rgba(255, 255, 255, .8);
+    font-family: inherit;
+}
+
+.grid-item-green,
+.grid-item-human,
+.grid-item-blue,
+.grid-item-black {
+    color: #fff;
+}
+.grid-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.grid-item:not(.grid-item-bg){
+    padding: 60px 50px;
+}
+
+.grid-item-bg {
+    background: url('../img/bg.png');
+}
+
+.grid-item-gray {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 70px 60px;
+}
+
+.grid-item-gray p {
+    font-size: 1.8rem;
+    margin-bottom: 50px
+}
+
+.grid-item-blue {
+    background-image: url('../img/blue.png');
+}
+
+.grid-item-beige {
+    background-image: url('../img/beige.png');
+}
+
+.grid-item-black {
+    background-image: url('../img/black.png');
+}
+
+.grid-item-human {
+    background-image: url("../img/human.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid-item-green {
+    background-image: url("../img/green.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid-item-blue div {
+    margin-bottom: 70px;
+}
+
+.grid-item-beige a {
+    color: #000;
+    border-color: #000;
+}
+
+.block {
+    display: block;
+}
+
+.logo {
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: url('../img/1.png') no-repeat;
+    margin-bottom: 25px;
+}
+
+div.logo~h4 {
+    word-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.grid-item-human p {
+    letter-spacing: 1px;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 620px;
+    justify-content: space-between;
+}
+
+.form input,
+.form textarea {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    word-spacing: 85%;
+}
+
+.form input {
+    width: 49%;
+    padding: 15px 25px 20px;
+}
+
+.form textarea {
+    width: 100%;
+    min-height: 160px;
+    padding: 20px 25px 20px;
+    margin-bottom: 90px;
+}
+
+.form div {
+    letter-spacing: 1px;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: flex-start;
+    margin-top: -25px;
+    margin-bottom: 42px;
+}
+
+.list li {
+    margin-right: 5px;
+}
+
+.list li a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.list-fb {
+    background: url('../img/facebook.png')
+}
+
+.list-tw {
+    background: url('../img/twitter.png');
+}
+
+.list-dr {
+    background: url('../img/dribbble.svg');
+}
+
+/*grid розмітка*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas: "a a a a a a b b b"
+        "c c c c d d d d d"
+        "c c c c e e e e e"
+        "f f f g g g g g g";
+}
+.grid-item-bg {
+    grid-area: a;
+}
+
+.grid-item-gray {
+    grid-area: b;
+}
+
+.grid-item-blue {
+    grid-area: c;
+}
+
+.grid-item-beige {
+    grid-area: d;
+}
+
+.grid-item-black {
+    grid-area: e;
+}
+
+.grid-item-human {
+    grid-area: f;
+}
+
+.grid-item-green {
+    grid-area: g;
+}
+@media (min-width: 761px) and (max-width: 1200px) {
+    h2 {
+        font-size: 3.6rem;
+    }
+    h3 {
+        font-size: 3.4rem;
+    }
+    h4{
+        font-size: 3.2rem;
+    }
+    p {
+        font-size: 1.4rem;
+        height: 2.1rem;
+        margin-bottom: 0;
+    }
+    input, textarea {
+        font-size: 1.3rem;
+    }
+    .grid-item-gray p {
+        font-size: 1.4rem;
+    }
+    .grid-item:not(:first-child){
+        padding: 30px;
+    }
+    .grid-item-blue div {
+        margin-bottom: 30px;
+    }
+    a {
+        display: flow;
+        margin: 0px 30px 0px 30px;
+    }
+}
+@media (max-width: 760px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: "b" "c" "d" "e" "f" "g";
+    }
+
+}
